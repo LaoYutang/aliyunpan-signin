@@ -8,6 +8,7 @@
 ```bash
 docker run -d \
   --name alisignin \
+  -v /etc/localtime:/etc/localtime \
   -e refresh-token=XXXXXXXXX \
   laoyutang/aliyunpan-signin:latest
 ```
